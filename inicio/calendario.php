@@ -14,17 +14,15 @@
     <?php
     function linha($semana)
     {
-        echo "
-            <tr>
-                <th>{$semana[0]}</th>
-                <th>{$semana[1]}</th>
-                <th>{$semana[2]}</th>
-                <th>{$semana[3]}</th>
-                <th>{$semana[4]}</th>
-                <th>{$semana[5]}</th>
-                <th>{$semana[6]}</th>
-            </tr>
-            ";
+        echo "<tr>";
+        for($i = 0; $i <= 6; $i++){
+            if(isset($semana[$i])){
+                echo "<td>{$semana[$i]}</td>";
+            }else {
+                echo "<td></td>";
+            }
+        }
+        echo "</tr>";
     }
     function calendario()
     {
