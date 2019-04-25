@@ -38,6 +38,7 @@
             }
             $dia++;
         }
+        linha($semana);
     }
 
 
@@ -53,13 +54,7 @@
             <th>Sex</th>
             <th>Sab</th>
         </tr>
-
-
-        <?php linha(); ?>
-        <?php linha(); ?>
-        <?php linha(); ?>
-        <?php linha(); ?>
-        <?php linha(); ?>
+            <?php calendario(); ?>
     </table>
 </body>
 
